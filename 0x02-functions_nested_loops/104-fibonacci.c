@@ -13,13 +13,13 @@ int main(void)
 	j = 1;
 	k = 2;
 
-	printf("%lu',j);
+	printf("%lu", j);
 
 	for (i = 1; i < 91; i++)
 	{
 		printf(", %lu", k);
 		k = k + j;
-		j = k -j;
+		j = k - j;
 	}
 
 	j1 = j / 1000000000;
@@ -37,5 +37,5 @@ int main(void)
 		j2 = k2 - j2;
 	}
 	printf("\n");
-	retuen (0);
+	return (0);
 }
