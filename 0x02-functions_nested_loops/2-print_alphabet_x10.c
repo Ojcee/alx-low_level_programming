@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+
 
 /**
  * print_alphabeth_x10 - Entry point for nested loop
@@ -7,16 +7,14 @@
  */
 void print_alphabeth_x10(void)
 {
-	int i = 0;
+	char c, i;
 
 	for (i = 0; i <= 9; i++)
 	{
-		int ch;
-
-		for (ch = 'a'; ch <= 'z'; ch++)
+		for (c = 'a'; c <= 'z'; c++)
 		{
-		_putchar(ch);
+			_putchar(ch);
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
