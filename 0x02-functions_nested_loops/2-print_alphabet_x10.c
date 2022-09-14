@@ -1,25 +1,22 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * print_alphabeth_x10 - prints 10 times the alphabet, in lowercase
- * followed by a new line
+ * print_alphabeth_x10 - Entry point for nested loop
+ * Return: Always 0
  */
 void print_alphabeth_x10(void)
 {
-	char ch;
-	int i;
+	int i = 0;
 
-	i = 0;
-
-	while (i < 10)
+	for (i = 0; i <= 9; i++)
 	{
-		ch = 'a';
-		while (ch <= 'z')
+		int ch;
+
+		for (ch = 'a'; ch <= 'z'; ch++)
 		{
-			_putchar(ch);
-			ch++;
+		_putchar(ch);
 		}
 	}
 	_putchar('\n');
-	i++;
 }

@@ -2,8 +2,8 @@
 
 /**
  * _abs - computes the absolute value of an integer
- * @n: the int to check
- * Return the absolute value of int
+ * @n: int argument for function
+ * Return: Always 0
  */
 int _abs(int n)
 {
@@ -11,5 +11,6 @@ int _abs(int n)
 	{
 		return (n);
 	}
-	return (-n);
+	else
+		return (n * -1);
 }

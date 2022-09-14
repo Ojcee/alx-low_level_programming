@@ -1,11 +1,18 @@
 #incude "main.h"
+#include <stdio.h>
 
 /**
  * _islower - checks for lowercase character
- * @c: the charater to check
- * Return1 if c us lowercase, 0 otherwise
+ * @c: parameter the int use to check for
+ * the argument of the function
+ * Return:Always 0
  */
-int -islower(int c)
+int _islower(int c)
 {
-	retrun (c >= 'a' && c <= 'z');
+	if (c >= 'a' && c <= 'z')
+	{
+		return (1);
+	}
+	else
+		return (0);
 }
