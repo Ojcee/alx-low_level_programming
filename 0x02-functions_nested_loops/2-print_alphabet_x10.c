@@ -1,8 +1,7 @@
 #include "main.h"
 
-
 /**
- * print_alphabeth_x10 - Entry point for nested loop
+ * print_alphabeth_x10 - function to print abc 10 times
  * Return: Always 0
  */
 void print_alphabeth_x10(void)
