@@ -2,7 +2,7 @@
 
 /**
  * print_number - prints an integer
- * @n: param
+ * @n: parameter
  */
 void print_number(int n)
 {
