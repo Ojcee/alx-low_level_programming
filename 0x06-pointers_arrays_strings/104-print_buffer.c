@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
  * print_line - prints a s bytes of a buffer
  * @c: buffer to print
@@ -13,7 +12,6 @@
 void print_line(char *c, int s, int l)
 {
 	int j, k;
-
 	for (j = 0; j <= 9; j++)
 	{
 		if (j <= s)
@@ -31,13 +29,14 @@ void print_line(char *c, int s, int l)
 	putchar('.');
 	}
 }
+
 	/**
 	 * print_buffer - prints a buffer
 	 * @b: buffer to print
 	 * @size: size of buffer
 	 * Return: void
 	 */
-void print_buffer(char *b, int size)
+	void print_buffer(char *b, int size)
 {
 	int i;
 
