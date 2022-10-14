@@ -8,21 +8,20 @@
  *
  * Return: Sum of parameters
  */
+
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list valist;
 	unsigned int i;
 	int sum = 0;
 
-	if (n == 0)
-		return (0);
+	va_list ptr;
 
-	va_start(valist, n);
+	va_start(ptr, n);
+	/* Accessing the next variadic function argument*/
 
 	for (i = 0; i < n; i++)
-		sum += va_arg(valist, int);
-
-	va_end(valist);
+		sum += va_arg(ptr, int);
+	va_end(ptr);
 
 	return (sum);
 }
